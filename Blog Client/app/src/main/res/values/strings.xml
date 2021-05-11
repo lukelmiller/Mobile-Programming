@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RESTClientExample</string>
+    <string name="title_activity_user_view">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
