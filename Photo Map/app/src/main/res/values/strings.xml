@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Uncle Roy All Around You</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_image_view">ImageViewActivity</string>
+    <string name="cameraButton">Take Photo</string>
+
+</resources>
