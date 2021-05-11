@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="health">
+        <item>lbs</item>
+        <item>lost</item>
+        <item>muscle mass</item>
+        <item>calories</item>
+        <item>workouts</item>
+        <item>hours</item>
+        <item>minutes</item>
+        <item>seconds</item>
+        <item>days</item>
+        <item>kg</item>
+        <item>reps</item>
+    </string-array>
+    <string-array name="finance">
+        <item>dollars</item>
+        <item>euros</item>
+        <item>pounds</item>
+        <item>cents</item>
+        <item>saved</item>
+        <item>purchased</item>
+        <item>property value</item>
+        <item>% growth</item>
+        <item>net loss</item>
+        <item>taxes</item>
+        <item>amount</item>
+        <item>income</item>
+        <item>assets</item>
+    </string-array>
+    <string-array name="quantity">
+        <item>sleep</item>
+        <item>money</item>
+        <item>children</item>
+        <item>friends</item>
+        <item>loved ones</item>
+        <item>years</item>
+        <item>months</item>
+        <item>days</item>
+        <item>hours</item>
+        <item>minutes</item>
+        <item>seconds</item>
+        <item>houses</item>
+    </string-array>
+    <string-array name="quality">
+        <item>sleep</item>
+        <item>time spent</item>
+        <item>children</item>
+        <item>friends</item>
+        <item>loved ones</item>
+        <item>years</item>
+        <item>relationships</item>
+        <item>houses</item>
+    </string-array>
+
+
+
+</resources>

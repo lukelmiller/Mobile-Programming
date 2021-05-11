@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/returnFromProgress"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="Back"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/overallProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_weight="1"
+        android:indeterminateOnly="false"
+        android:progress="2"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toTopOf="@id/healthProgress"
+        app:layout_constraintEnd_toStartOf="@+id/financialProgress"
+        app:layout_constraintStart_toEndOf="@id/healthProgress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/overallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/overallProgress"
+        app:layout_constraintEnd_toEndOf="@+id/overallProgress"
+        app:layout_constraintStart_toStartOf="@+id/overallProgress"
+        app:layout_constraintTop_toTopOf="@+id/overallProgress"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/healthProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="false"
+        android:progress="2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/financialProgress"
+        android:progressDrawable="@drawable/circle"/>
+
+
+    <TextView
+        android:id="@+id/healthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/healthProgress"
+        app:layout_constraintEnd_toEndOf="@+id/healthProgress"
+        app:layout_constraintStart_toStartOf="@+id/healthProgress"
+        app:layout_constraintTop_toTopOf="@+id/healthProgress"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/financialProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:indeterminateOnly="false"
+        android:progress="2"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/financialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/financialProgress"
+        app:layout_constraintEnd_toEndOf="@+id/financialProgress"
+        app:layout_constraintStart_toStartOf="@+id/financialProgress"
+        app:layout_constraintTop_toTopOf="@+id/financialProgress"
+        />
+
+    <ProgressBar
+        android:id="@+id/qualityProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="false"
+        android:progress="2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/healthProgress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/financialProgress"
+        android:progressDrawable="@drawable/circle"/>
+
+
+    <TextView
+        android:id="@+id/qualityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/qualityProgress"
+        app:layout_constraintEnd_toEndOf="@+id/qualityProgress"
+        app:layout_constraintStart_toStartOf="@+id/qualityProgress"
+        app:layout_constraintTop_toTopOf="@+id/qualityProgress"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/quantityProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:indeterminateOnly="false"
+        android:progress="2"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@id/financialProgress" />
+
+
+    <TextView
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/quantityProgress"
+        app:layout_constraintEnd_toEndOf="@+id/quantityProgress"
+        app:layout_constraintStart_toStartOf="@+id/quantityProgress"
+        app:layout_constraintTop_toTopOf="@+id/quantityProgress"
+        />
+
+    <TextView
+        android:id="@+id/tvOverallProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Overall Progress"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/overallProgress"
+        app:layout_constraintEnd_toEndOf="@+id/overallProgress"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="@+id/overallProgress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvHealthProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Progress"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/healthProgress"
+        app:layout_constraintEnd_toEndOf="@+id/healthProgress"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/healthProgress"
+        app:layout_constraintTop_toBottomOf="@+id/overallProgress"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvFinanceProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial Progress"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/financialProgress"
+        app:layout_constraintEnd_toEndOf="@+id/financialProgress"
+        app:layout_constraintStart_toStartOf="@+id/financialProgress"
+        app:layout_constraintTop_toBottomOf="@+id/overallProgress"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvQualityProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality Progress"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/qualityProgress"
+        app:layout_constraintEnd_toEndOf="@+id/qualityProgress"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="@+id/qualityProgress"
+        app:layout_constraintTop_toBottomOf="@+id/healthProgress"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvQuantityProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity Progress"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/quantityProgress"
+        app:layout_constraintEnd_toEndOf="@+id/quantityProgress"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/quantityProgress"
+        app:layout_constraintTop_toBottomOf="@+id/financialProgress"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
