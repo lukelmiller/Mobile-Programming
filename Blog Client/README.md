@@ -1,2 +1,2 @@
 # Blog-Client
-Android Blog Client App to read from a REST client
+Android Blog Client App to read from a REST API
